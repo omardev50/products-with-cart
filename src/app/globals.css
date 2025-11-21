@@ -1,26 +1,39 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Fonts */
+@font-face {
+  font-family: "Red Hat Text";
+  src: url("/fonts/RedHatText/static/RedHatText-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Red Hat Text";
+  src: url("/fonts/RedHatText/static/RedHatText-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Red Hat Text";
+  src: url("/fonts/RedHatText/static/RedHatText-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Red Hat Text";
+  src: url("/fonts/RedHatText/RedHatText-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Globals */
+.bg-rose-50 { background-color: hsl(20, 50%, 98%); }
+.bg-rose-100 { background-color: hsl(13, 31%, 94%); }
+.bg-rose-300 { background-color: hsl(14, 25%, 72%); }
+.bg-rose-400 { background-color: hsl(7, 20%, 60%); }
+.bg-rose-500 { background-color: hsl(12, 20%, 44%); }
+.bg-rose-900 { background-color: hsl(14, 65%, 9%); }
+.font-redhat { font-family: "Red Hat Text"; }
+* {
+  font-family: "Red Hat Text";
 }
